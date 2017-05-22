@@ -1,0 +1,67 @@
+/*
+Choose a font from google fonts to use for the text in the hero
+and use @import to include in this style sheet. The font in the image is "Bangers"
+*/
+
+
+/*
+- make the masthead a flexbox container
+- make sure the logo displays on the left and the navigation displays on the right using flexbox
+- make sure that the navigation can drop below the logo when the page shrinks using flexbox
+- make sure the content is vertically centered in the masthead using flexbox
+- using the position property, make sure the navigation stays fixed to the top when scrolling
+- when scrolling make sure there is no gap between the masthead and top of the page
+*/
+
+
+/*
+- make the hero div a flexbox container
+- make the items display stacked instead of as a row using flexbox
+- make sure the content is centered along the main axis using flexbox
+- make sure the content is vertically centered in the here div using flexbox
+- use the font brought in by google fonts for the text in the hero div
+- add a black dropshadow to the text with a 2px offset
+- adjust the top margin of the hero to account for the fixed masthead
+*/
+
+
+/*
+- Make the cards div a flexbox container
+- make sure the content is centered along the main axis using flexbox
+- reverse the order of the cards using flexbox (should become chili aruna italy spain)
+- make sure when the page shrinks the cards wrap and stack on eachother
+*/
+
+
+/*
+- Make each individual card a flexbox container
+- using flexbox make sure the content in each card is stacked and not in a row
+- make sure the content is centered in each card using flexbox
+- make sure the information in the card is at the bottom of the card using flexbox
+  (there is bottom padding applied in common.css to keep it off the very bottom so it looks right)
+*/
+
+
+/*
+- Make the travel table div a flexbox container
+- using flexbox make sure the content is stacked and not in a row
+- make sure the content is centered in each card using flexbox
+*/
+
+
+/*
+- Make the footer div a flexbox container
+- make sure the copyright displays on the left and the social links display on the right using flexbox
+- make sure the content is vertically centered in the here div using flexbox
+*/
+
+
+/*
+MEDIUM CHALLENGE:
+Using media queries, hide the national bird column in the table when the screen is at a 
+max width of 800px. Hide both the national bird and population column when the
+screen is at a max width of 600px
+
+HINT:
+leverage the classes .bird and .population 
+*/
