@@ -2,7 +2,13 @@
 Choose a font from google fonts to use for the text in the hero
 and use @import to include in this style sheet. The font in the image is "Bangers"
 */
+<style>
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+</style>
 
+* {
+  font-family: 'Just Another Hand', cursive;
+}
 
 /*
 - make the masthead a flexbox container
@@ -12,6 +18,19 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - using the position property, make sure the navigation stays fixed to the top when scrolling
 - when scrolling make sure there is no gap between the masthead and top of the page
 */
+
+#masthead {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+
+
 
 
 /*
@@ -25,6 +44,16 @@ and use @import to include in this style sheet. The font in the image is "Banger
 */
 
 
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Just Another Hand', cursive;
+  box-shadow: 2px 2px 2px black;
+  margin-top: 100px;
+}
+
 /*
 - Make the cards div a flexbox container
 - make sure the content is centered along the main axis using flexbox
@@ -32,6 +61,12 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - make sure when the page shrinks the cards wrap and stack on eachother
 */
 
+#cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
 
 /*
 - Make each individual card a flexbox container
@@ -40,13 +75,24 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - make sure the information in the card is at the bottom of the card using flexbox
   (there is bottom padding applied in common.css to keep it off the very bottom so it looks right)
 */
+.card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 
+}
 
 /*
 - Make the travel table div a flexbox container
 - using flexbox make sure the content is stacked and not in a row
 - make sure the content is centered in each card using flexbox
 */
+
+#travel-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /*
@@ -55,13 +101,34 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - make sure the content is vertically centered in the here div using flexbox
 */
 
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+
+}
+
+@media (max-width: 800px) {
+  .bird {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bird, .population {
+    display: none;
+  
+  }
+}
 /*
 MEDIUM CHALLENGE:
-Using media queries, hide the national bird column in the table when the screen is at a 
+Using media queries, hide the national bird column in the table when the screen is at a
 max width of 800px. Hide both the national bird and population column when the
 screen is at a max width of 600px
 
+@ma
+
 HINT:
-leverage the classes .bird and .population 
+leverage the classes .bird and .population
 */
