@@ -1,0 +1,66 @@
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  padding: 20px;
+  border: 1px solid grey;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: flex-start;*/
+}
+
+.field input { width: 100%; }
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+label {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+
+}
+
+input {
+  padding: 2px;
+
+}
+
+button {
+  border: 1px grey;
+  background-color: rgb(159, 180, 109);
+  padding: 10px 100px;
+  color: white;
+  font-size: 16px;
+
+}
+
+.fifty {
+  width: 47%;
+}
+
+.thirtythree {
+  width:30.45%;
+}
+
+.twentyfourish {
+  width:22.2%;
+}
+
+.container4 {
+  display: flex;
+  margin: 15px 30px;
+  justify-content: center;
+  border: none;
+}
