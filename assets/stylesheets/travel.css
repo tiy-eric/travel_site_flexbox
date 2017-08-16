@@ -3,6 +3,8 @@ Choose a font from google fonts to use for the text in the hero
 and use @import to include in this style sheet. The font in the image is "Bangers"
 */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 
 /*
 - make the masthead a flexbox container
@@ -13,6 +15,22 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - when scrolling make sure there is no gap between the masthead and top of the page
 */
 
+* {
+  margin: 0;
+}
+
+#masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+#masthead a {
+  justify-content: center;
+}
 
 /*
 - make the hero div a flexbox container
@@ -24,6 +42,22 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - adjust the top margin of the hero to account for the fixed masthead
 */
 
+#hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-shadow: black 2px 2px 2px;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  z-index: -1;
+  justify-content: space-evenly;
+}
+
+#content {
+  padding-top: 100px;
+}
 
 /*
 - Make the cards div a flexbox container
@@ -31,6 +65,14 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - reverse the order of the cards using flexbox (should become chili aruna italy spain)
 - make sure when the page shrinks the cards wrap and stack on eachother
 */
+
+#cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+}
+
 
 
 /*
@@ -41,6 +83,12 @@ and use @import to include in this style sheet. The font in the image is "Banger
   (there is bottom padding applied in common.css to keep it off the very bottom so it looks right)
 */
 
+.card {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*
 - Make the travel table div a flexbox container
@@ -48,6 +96,12 @@ and use @import to include in this style sheet. The font in the image is "Banger
 - make sure the content is centered in each card using flexbox
 */
 
+#travel-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*
 - Make the footer div a flexbox container
@@ -56,12 +110,33 @@ and use @import to include in this style sheet. The font in the image is "Banger
 */
 
 
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*
 MEDIUM CHALLENGE:
-Using media queries, hide the national bird column in the table when the screen is at a 
+Using media queries, hide the national bird column in the table when the screen is at a
 max width of 800px. Hide both the national bird and population column when the
 screen is at a max width of 600px
 
 HINT:
-leverage the classes .bird and .population 
+leverage the classes .bird and .population
 */
+
+@media (max-width: 800px) {
+  .bird {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .population {
+    display: none;
+  }
+  .bird {
+    display: none;
+  }
+}
